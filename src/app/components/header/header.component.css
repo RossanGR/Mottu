@@ -1,0 +1,22 @@
+/* Button Toggle Angular Material Custom */
+
+.mat-button-toggle-group{
+    border-radius: 15px;
+    background: black;
+    border: 2px solid #3D3D3D;
+}
+
+.mat-button-toggle{
+    display: flex;
+    align-items: center;
+    color: #A4A4A4;
+}
+
+.mat-button-toggle .mat-icon{
+    margin-right: 10px;
+}
+
+.mat-button-toggle-checked {
+    background: #FFF!important;
+    color: #000!important;
+}

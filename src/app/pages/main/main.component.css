@@ -1,0 +1,13 @@
+.mat-mdc-card .mat-icon{
+    position: absolute;
+    z-index: 1;
+    right: 12px;
+    top: 12px;
+    color:white;
+}
+
+.mat-mdc-card .mat-icon:hover{
+    cursor: pointer;
+    color: black;
+}
+
