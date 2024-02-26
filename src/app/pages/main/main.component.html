@@ -1,22 +1,13 @@
-<app-header></app-header>
-
-<div class="d-block m-auto w-4/5">
-    <div class="flex justify-between items-center my-8">
+<div class="d-block m-auto w-4/5 2xl:w-[1360px]">
+    <div class="flex flex-wrap justify-between items-center my-8">
         <h1 class="creepster-regular">Início</h1>
-        <span><input type="text" placeholder="Pesquisar" [(ngModel)]="inputName" (ngModelChange)="getCharacterByName($event)"/></span>
+        <span><input type="text" class="searchInput" placeholder="Pesquisar" [(ngModel)]="searchInput" (ngModelChange)="getCharacterByName($event)"/></span>
     </div>
 
-    <div class="flex justify-start flex-wrap gap-9"  *ngIf="characters.results">
-        <mat-card class="example-card mb-6 rounded-xl" *ngFor="let character of characters.results">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorite"></mat-icon>
-            <img mat-card-image class="w-100" [src]="character.image" [title]="character.name" [alt]="character.name">
-            <mat-card-content class="bg-black text-white">
-              <p class="font-creepster-regular pt-4 text-2xl">{{character.name}}</p>
-              <p class="text-gray-350 text-base">{{character.gender}}</p>
-            </mat-card-content>
-          </mat-card>
-    </div>
-    <div class="bg-black w-100 rounded-xl p-52" *ngIf="characters.results?.length == 0"> 
+           
+    <app-card class="flex flex-wrap gap-x-[53px] gap-y-7 " [characters]="characters" *ngIf="characters"></app-card>
+    
+    <div class="bg-black w-100 rounded-xl p-52" *ngIf="characters.length == 0"> 
         <h2 class="text-white text-center text-2xl mb-4">Nada foi encontrado</h2>
         <p class="text-gray-350 text-center text-lg">Tente realizar uma nova busca.</p>
     </div>

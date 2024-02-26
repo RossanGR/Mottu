@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { CardComponent } from './pages/card/card.component';
 // End Components Angular Material
 
 @NgModule({
@@ -22,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     AppComponent,
     HeaderComponent,
     MainComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

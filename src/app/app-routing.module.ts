@@ -4,7 +4,8 @@ import { MainComponent } from './pages/main/main.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
 
 const routes: Routes = [
-  {path: '', component: MainComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: 'home', component: MainComponent},
   {path: 'favorites', component: FavoritesComponent}
 ];
 

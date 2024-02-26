@@ -13,7 +13,12 @@ module.exports = {
         'light-green':'#00B5CC',
         'gray-350':'#A4A4A4',
       },
+      screens:{
+        'sm':'475px',
+        // => @media (min-width: 475px) { ... }
+      }
     },
+    
   },
   plugins: [],
 }

@@ -1,0 +1,8 @@
+<mat-card class="example-card mb-6 rounded-xl w-100"  *ngFor="let character of characters">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorite" (click)="setFavorite(character.id)" [ngStyle]="{'color': character.isFavorite ? 'black' : 'white'}"></mat-icon>
+    <img mat-card-image class="w-100" [src]="character.image" [title]="character.name" [alt]="character.name">
+    <mat-card-content class="bg-black text-white">
+      <p class="font-creepster-regular pt-4 text-2xl break-all">{{character.name}}</p>
+      <p class="text-gray-350 text-base">{{character.gender}}</p>
+    </mat-card-content>
+  </mat-card>

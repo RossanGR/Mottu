@@ -35,3 +35,16 @@ html, body { height: 100%; }
 body { margin: 0; font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal; }
+
+.mat-mdc-card .mat-icon{
+    position: absolute;
+    z-index: 1;
+    right: 12px;
+    top: 12px;
+    color:white;
+}
+
+.mat-mdc-card .mat-icon:hover{
+    cursor: pointer;
+    color: black!important;
+}

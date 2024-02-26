@@ -8,6 +8,13 @@
 
 .mat-mdc-card .mat-icon:hover{
     cursor: pointer;
-    color: black;
+    color: black!important;
 }
 
+.searchInput{
+    background-color: transparent;
+    color: #F2F2F2;
+    border: 1px solid #5D5D5D;
+    border-radius: 10px;
+    padding: 10px;
+}

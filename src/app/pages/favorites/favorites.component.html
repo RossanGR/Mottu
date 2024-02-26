@@ -1,13 +1,27 @@
-<app-header></app-header>
-
-<div class="d-block m-auto w-3/5">
+<div class="d-block m-auto w-4/5">
     <div class="flex justify-between items-center my-8">
-        <h1 class="creepster-regular">Favoritos</h1>       
+        <h1 class="creepster-regular">Favoritos</h1>
     </div>
 
-    <div class="bg-black w-100 rounded-xl py-52"> 
-        <h2 class="text-white text-center text-2xl mb-4">Parece que você ainda não tem favoritos</h2>
-        <p class="text-gray-350 text-center text-lg">Volte à página inicial e escolha os melhores para você.</p>
+    <div class="flex justify-start flex-wrap gap-9" *ngIf="characterFavorites.length > 0; else notFound">
+        <mat-card class="example-card mb-6 rounded-xl" *ngFor="let character of characterFavorites">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="favorite"
+                [ngStyle]="{'color': character.isFavorite ? 'black' : 'white'}" (click)="removeFavorite(character.id)"></mat-icon>
+            <img mat-card-image class="w-100" [src]="character.image" [title]="character.name" [alt]="character.name">
+            <mat-card-content class="bg-black text-white">
+                <p class="font-creepster-regular pt-4 text-2xl">{{character.name}}</p>
+                <p class="text-gray-350 text-base">{{character.gender}}</p>
+            </mat-card-content>
+        </mat-card>
     </div>
 
+    <!-- <app-card class="flex flex-wrap gap-x-[63px] gap-y-7  justify-start sm:justify-center" [favorites]="characterFavorites" *ngIf="characterFavorites.length > 0; else notFound"></app-card> -->
+
+    <ng-template #notFound>
+        <div class="bg-black w-100 rounded-xl py-52">
+            <h2 class="text-white text-center text-2xl mb-4">Parece que você ainda não tem favoritos</h2>
+            <p class="text-gray-350 text-center text-lg">Volte à página inicial e escolha os melhores para você.</p>
+            <button routerLink="" class="bg-white text-black rounded-xl block m-auto p-3 mt-5 font-semibold">Voltar ao início</button>
+        </div>
+    </ng-template>
 </div>
