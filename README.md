@@ -1,4 +1,6 @@
-<img style="display:block; margin:0 auto; width:80%;" src="src/assets/images/logo.png" title="Rick and Morty" alt="Title Rick and Morty"/>
+<p align="center">
+  <img src="src/assets/images/logo.png" style="width:70%;" alt="Titulo Rick and Morty" title="Rick and Morty">
+</p>
 
 # RickMorty
 
