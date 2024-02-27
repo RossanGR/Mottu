@@ -6,6 +6,9 @@
 
 Este projeto é uma aplicação desenvolvida em Angular que utiliza a API do ["Rick and Morty"](https://rickandmortyapi.com/) para exibir informações sobre os personagens da série. 
 
+## Aplicação
+[Rick And Morty](https://mottu.vercel.app/home)
+
 ## Tecnologias Utilizadas
 * Angular: Framework de desenvolvimento web.
 * RxJs: Biblioteca reativa para programação assíncrona.
