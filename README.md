@@ -2,7 +2,7 @@
   <img src="src/assets/images/logo.png" style="width:70%;" alt="Titulo Rick and Morty" title="Rick and Morty">
 </p>
 
-# RickMorty
+# Rick e Morty
 
 Este projeto é uma aplicação desenvolvida em Angular que utiliza a API do ["Rick and Morty"](https://rickandmortyapi.com/) para exibir informações sobre os personagens da série. 
 
