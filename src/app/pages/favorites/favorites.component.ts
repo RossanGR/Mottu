@@ -36,6 +36,7 @@ export class FavoritesComponent implements OnInit {
   open(character:Characters){
     this.dialog.open(ModalComponent,{
       panelClass: 'dialogCustom',
+      width: '600px',
       data: character
     })
   }

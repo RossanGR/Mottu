@@ -1,6 +1,6 @@
 <div mat-dialog-content>
   <div class="flex flex-wrap">
-    <img class="sm:w-[49%] w-[49%] object-cover" [src]="data.image" [alt]="data.name" [title]="data.name" />
+    <img class="sm:w-[49%] w-full object-cover" [src]="data.image" [alt]="data.name" [title]="data.name" />
     <div class="flex-auto text-white p-5">
       <h2 class="font-creepster-regular text-2xl break-all ">{{data.name}}</h2>
       <div class="pt-4">
@@ -12,7 +12,7 @@
         <span [ngClass]="getEnumStatus(data.status)">{{getEnumStatus(data.status)}}</span>
       </div>
       <div mat-dialog-actions>
-        <button mat-button mat-dialog-close>Close</button>
+        <button mat-button mat-dialog-close>Fechar</button>
       </div>
     </div>
   </div>

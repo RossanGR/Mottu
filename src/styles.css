@@ -69,3 +69,8 @@ body { margin: 0; font-family: "Poppins", sans-serif;
 /* .mat-mdc-dialog-actions{
   margin-top: 20px;
 } */
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  background: #000000cf;
+  opacity: 1;
+}
