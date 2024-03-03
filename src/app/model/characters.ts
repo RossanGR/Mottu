@@ -1,8 +1,9 @@
 export interface Characters {
+
     id:number,
     name:string,
     status: string,
-    specie: string,
+    species: string,
     type: string,
     gender: string,
     origin:{

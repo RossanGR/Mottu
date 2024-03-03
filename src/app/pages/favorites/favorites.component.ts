@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RickMortyService } from 'src/app/services/rick-morty.service';
 import { Characters } from 'src/app/model/characters';
+import { ModalComponent } from 'src/app/components/modal/modal.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-favorites',
@@ -11,7 +13,7 @@ export class FavoritesComponent implements OnInit {
 
   characterFavorites: Array<Characters> = []
 
-  constructor(public service: RickMortyService) { }
+  constructor(public service: RickMortyService, public dialog: MatDialog) { }
 
   ngOnInit() {
     this.getFavorites()
@@ -29,5 +31,12 @@ export class FavoritesComponent implements OnInit {
   removeFavorite(id:number){
     const remove:Array<Characters> = this.characterFavorites.filter((characterRemove)=> characterRemove.id != id);
     this.service.removeFavorite(remove!)
+  }
+
+  open(character:Characters){
+    this.dialog.open(ModalComponent,{
+      panelClass: 'dialogCustom',
+      data: character
+    })
   }
 }

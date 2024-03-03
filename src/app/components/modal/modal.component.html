@@ -1,0 +1,22 @@
+<div mat-dialog-content>
+  <div class="flex flex-wrap">
+    <img class="sm:w-[49%] w-[49%] object-cover" [src]="data.image" [alt]="data.name" [title]="data.name" />
+    <div class="flex-auto text-white p-5">
+      <h2 class="font-creepster-regular text-2xl break-all ">{{data.name}}</h2>
+      <div class="pt-4">
+        <p class="text-gray-350 text-base">Gênero</p>
+        <p class="mb-3">{{getEnumGender(data.gender)}}</p>
+        <p class="text-gray-350 text-base">Espécie</p>
+        <p class="mb-3">{{data.species}}</p>
+        <p class="text-gray-350 text-base">Status</p>
+        <span [ngClass]="getEnumStatus(data.status)">{{getEnumStatus(data.status)}}</span>
+      </div>
+      <div mat-dialog-actions>
+        <button mat-button mat-dialog-close>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div> -->

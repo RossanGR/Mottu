@@ -48,3 +48,24 @@ body { margin: 0; font-family: "Poppins", sans-serif;
     cursor: pointer;
     color: black!important;
 }
+
+
+.dialogCustom .mdc-dialog__content{
+  background-color: #000;
+  padding: 0px!important;
+}
+
+.dialogCustom .mat-mdc-dialog-actions.mdc-dialog__actions > button{
+  background-color: rgb(214, 61, 46)!important;
+  color: #FFF;
+  width: 100%;
+  /* margin: 0 !important; */
+}
+
+.mdc-dialog__actions{
+  padding: 0!important;
+  margin-top: 10px!important;
+}
+/* .mat-mdc-dialog-actions{
+  margin-top: 20px;
+} */
