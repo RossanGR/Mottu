@@ -51,7 +51,7 @@ body { margin: 0; font-family: "Poppins", sans-serif;
 
 
 .dialogCustom .mdc-dialog__content{
-  background-color: #000;
+  background-color: #1f1f1f;
   padding: 0px!important;
 }
 
@@ -73,4 +73,8 @@ body { margin: 0; font-family: "Poppins", sans-serif;
 .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
   background: #000000cf;
   opacity: 1;
+}
+
+.mat-mdc-dialog-content {
+  max-height: 100vh!important;
 }
